@@ -1,13 +1,14 @@
 {
 	"parser": "@typescript-eslint/parser",
 	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-	"plugins": ["@typescript-eslint", "simple-import-sort"],
+	"plugins": ["@typescript-eslint", "simple-import-sort", "eslint-plugin-import"],
 	"rules": {
 		"simple-import-sort/imports": [
 			"error",
 			{
 				"groups": [["^@?\\w"], ["."]]
 			}
-		]
+		],
+		"import/newline-after-import": "error"
 	}
 }
